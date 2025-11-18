@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ভাষা নির্বাচন - Language Selection</title>
+    <!-- Tailwind CSS লোড করা হচ্ছে -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* ফন্ট হিসেবে 'Inter' ব্যবহার করা হচ্ছে */
+        :root {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 min-h-screen flex items-center justify-center p-4">
+
+    <!-- মূল কার্ড কন্টেইনার -->
+    <div class="bg-white p-8 rounded-xl shadow-2xl w-full max-w-md">
+        <!-- শিরোনাম -->
+        <h1 class="text-3xl font-extrabold text-gray-800 text-center mb-6">
+            JAGARAN Cultural Festival
+        </h1>
+        
+        <!-- নতুন যোগ করা লাইন (ইংরেজিতে) -->
+        <p class="text-center text-gray-500 text-lg font-semibold mb-1">
+            Choose your preferred language
+        </p>
+        
+        <!-- বাংলার লাইন -->
+        <p class="text-center text-gray-500 mb-6">
+            আপনার পছন্দের ভাষা বেছে নিন
+        </p>
+
+        <!-- বোতামগুলোর কন্টেইনার -->
+        <div class="space-y-4">
+            <!-- English বোতাম -->
+            <button 
+                onclick="window.location.href='https://jagoronculturalsio.github.io/home/'" 
+                class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-4 rounded-lg transition duration-300 ease-in-out transform hover:scale-[1.02] shadow-lg shadow-blue-500/50 focus:outline-none focus:ring-4 focus:ring-blue-500 focus:ring-opacity-50 text-xl"
+                aria-label="Continue with English"
+            >
+                Continue with English
+            </button>
+
+            <!-- Bangla বোতাম -->
+            <button 
+                onclick="window.location.href='https://jagoronculturalsio.github.io/homeb/'" 
+                class="w-full bg-green-600 hover:bg-green-700 text-white font-bold py-4 px-4 rounded-lg transition duration-300 ease-in-out transform hover:scale-[1.02] shadow-lg shadow-green-500/50 focus:outline-none focus:ring-4 focus:ring-green-500 focus:ring-opacity-50 text-xl"
+                aria-label="বাংলাতে চালিয়ে যান"
+            >
+                বাংলাতে চালিয়ে যান
+            </button>
+        </div>
+
+        <p class="text-center text-sm text-gray-400 mt-8">
+            Jagoron Cultural SIO
+        </p>
+    </div>
+
+</body>
+</html>
